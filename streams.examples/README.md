@@ -136,4 +136,16 @@ You may have problems with `slf4j`. If so, slap in `pom.xml` this bad boy:
      </dependency> 
 ```
 # Comments
+Given my present understanding of the kafka platform, I would investigate a hierarchial approach for **unique ID** counting. Constantly checking every unique user access against the user list may be a demanding task. I'd try to sort the user list according to the amount of accesses (relative or absolute). By doing so, frequent user would be matched sooner, making not necessary to parse the entire list. A front a first, computational demanding task of counting unique users and they accesses, my hypothesys is that resourses will be spared once done. That's becouse being a frequent or non frequent user of is strongly correlated with personality traits+ that hardly change in the short-medium period, making the hierarchy list potentially stable. 
 
+I worked with Java and Vim. I favor Java over Python, let's say, just for a matter of personal prefernces. Working at a slighly lower level bewithc me. I.e., the language I have more fun with is C. 
+I tend to favor Vim over IDEs, especially for small and quick projects. Being essential and easy to configure, allows me to better concentrate. 
+
++Nikolina Ljepava, R. Robert Orr, Sean Locke, Craig Ross,
+Personality and social characteristics of Facebook non-users and frequent users,
+Computers in Human Behavior,
+Volume 29, Issue 4,
+2013,
+Pages 1602-1607,
+ISSN 0747-5632,
+https://doi.org/10.1016/j.chb.2013.01.026. 
